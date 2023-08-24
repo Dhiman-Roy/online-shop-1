@@ -1,0 +1,30 @@
+
+.imageContainer{
+    box-sizing: border-box;
+    flex: 2 1 0;
+    position: relative;
+
+}
+.image{
+    max-width: 100%;
+    height: 100%;
+}
+.slideImage{
+    height: 100%;
+}
+.iconContainer{
+    position: absolute;
+    top: 50%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    right: 2rem;
+    left: 2rem;
+       
+}
+span{
+    cursor: pointer;
+    background-color: rgba(14, 95, 125, 0.541);
+    padding: .5rem;
+    border-radius: 5px;
+}

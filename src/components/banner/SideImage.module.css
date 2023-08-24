@@ -1,0 +1,11 @@
+.imageContainer{
+    
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1 1 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}

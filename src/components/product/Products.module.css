@@ -1,0 +1,13 @@
+.card{
+    max-width: 15rem;
+    
+    background-color: aqua;
+}
+.content{
+    text-align: center;
+    padding: .5rem;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}

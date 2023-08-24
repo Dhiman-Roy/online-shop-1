@@ -1,0 +1,23 @@
+.headerContainer{
+    background-color: rgba(2, 3, 3, 0.608);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.2rem;
+}
+.cartContainer{
+    display: flex;
+    gap: .7rem;
+    align-items: center;
+    background-color: rgba(226, 81, 19, 0.838);
+    padding: 0rem .7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

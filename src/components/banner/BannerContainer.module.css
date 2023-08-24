@@ -1,0 +1,8 @@
+.bannerContainer{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    
+}
