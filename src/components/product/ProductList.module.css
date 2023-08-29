@@ -1,7 +1,7 @@
 .listContainer{
+   
     display: flex;
-    gap: 2rem;
+    justify-content: flex-start;
+    gap: 1rem;
     flex-wrap: wrap;
-    justify-content: space-between;
-    
 }

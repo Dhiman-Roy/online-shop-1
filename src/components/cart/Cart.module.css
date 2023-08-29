@@ -1,0 +1,61 @@
+
+.cart{
+    display: flex;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, 0.085);
+    padding: 1rem;
+    justify-content: center;
+
+}
+.quantityContainer{
+    display: flex;
+    gap: .2rem;
+    align-items: baseline;
+}
+.button{
+    display: flex;
+    justify-content:space-around;
+}
+.amountContainer{
+    display: flex;
+    gap: .6rem;
+    align-items: baseline;
+}
+.titleSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.amountSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.button button{
+    width: 2.5rem;
+    height: 1.7rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: rgba(16, 16, 15, 0.353);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.123);
+}
+.amount{
+    font-size: 1.3rem;
+}
+.quantity{
+    font-size: 1.3rem;
+}
+
+
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+.imgContainer{
+    width: 5rem;
+    height: 5rem;
+}

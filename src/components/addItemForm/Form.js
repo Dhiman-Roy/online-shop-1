@@ -20,7 +20,8 @@ const Form = () => {
     }
 
     const imageChangeHandler = event => {
-         setProductImage(event.target.files[0]);
+        setProductImage(event.target.files[0]);
+        
     }
 
     const descriptionChangeHandler = event => {

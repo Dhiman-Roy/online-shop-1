@@ -1,0 +1,21 @@
+.backdrop{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.modal{
+    width: 30rem;
+    height: 30rem;
+    background-color: azure;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.modal h2{
+    text-align: center;
+}

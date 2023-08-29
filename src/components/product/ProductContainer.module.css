@@ -1,6 +1,7 @@
-h2{
+.container h2{
     text-align: center;
 }
 .container{
-    margin: 0 1rem;
+    
+    padding: 1rem;
 }
