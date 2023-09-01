@@ -10,7 +10,7 @@ function App() {
     <React.Fragment>
      <Header/>
      <BannerContainer/>
-     <CartContainer/>
+     {/* <CartContainer/> */}
      <ProductContainer/>
      <AddItemForm/>
     </React.Fragment>

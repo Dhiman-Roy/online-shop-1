@@ -8,10 +8,27 @@ const productSlice = createSlice({
         totalPrice: 0
     },
     reducers: {
-        addProducts(state, action){
+        addItemToCart(state, action){
+            const newItem = action.payload;
+            const existingItem = state.items.filter(item => item.id === newItem.id);
+            state.totalQuantity++;
+            if(!existingItem){
+                state.items.push({
+                    id: newItem.id,
+                    title: newItem.title,
+                    price: newItem.price,
+                    quantity: newItem.quantity,
+                    totalPrice: newItem.price,
+                    image: newItem.title,
+
+                })
+            } else {
+                existingItem.quantity++;
+                existingItem.totalPrice = existingItem.totalPrice + newItem.price;
+            }
 
         },
-        removeProducts(state, action){
+        removeItemFromCart(state, action){
 
         }
     }
