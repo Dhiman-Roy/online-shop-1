@@ -4,13 +4,15 @@ import BannerContainer from "./components/banner/BannerContainer";
 import ProductContainer from "./components/product/ProductContainer";
 import AddItemForm from "./components/addItemForm/AddItemForm";
 import CartContainer from "./components/cart/CartContainer";
+import { useSelector } from "react-redux";
 
 function App() {
+  const cartToggler = useSelector(state => state.ui.cartIsVisible);
   return (
     <React.Fragment>
      <Header/>
      <BannerContainer/>
-     {/* <CartContainer/> */}
+     {cartToggler && <CartContainer/> }
      <ProductContainer/>
      <AddItemForm/>
     </React.Fragment>

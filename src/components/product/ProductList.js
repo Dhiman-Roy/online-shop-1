@@ -33,6 +33,7 @@ const [productList, setProductList] = useState([])
     const productsData = productList.map(item => {
         return <Products
         key={item.id}
+        id={item.id}
          title={item.title}
          description={item.description}
          quantity={1}

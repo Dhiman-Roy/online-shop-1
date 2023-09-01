@@ -27,6 +27,14 @@
 .modal h2{
     text-align: center;
 }
+.toggleButton{
+   font-size: x-large;
+   color: rgba(255, 0, 0, 0.801);
+   border: none;
+   background-color: transparent;
+   float: right;
+   cursor: pointer;
+}
 /* body{
     overflow: hidden;
 } */
