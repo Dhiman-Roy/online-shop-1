@@ -1,28 +1,29 @@
 import React from 'react';
 import styles from './Cart.module.css';
 
-export default function Cart() {
+export default function Cart(props) {
+  const {id, title, price, totalPrice, quantity,image} = props;
   return (
     <div className={styles.cart}>
         <div className={styles.imgContainer}>
             <img
-             src='https://firebasestorage.googleapis.com/v0/b/reactshopone.appspot.com/o/images%2Flenovo.webpe978ed54-6355-4719-951b-5dd75a2d20b7?alt=media&token=77ce9a50-ddaa-4f2e-b462-60d73f224292'
+             src={image}
               alt='image'
             className={styles.img}
               />
         </div>
         <div className={styles.titleSection}>
-            <div>My first book</div>
+            <div>{title}</div>
             <div className={styles.quantityContainer}>
                 <div>x</div>
-                <div className={styles.quantity}>3</div>
+                <div className={styles.quantity}>{quantity}</div>
             </div>
             
         </div>
         <div className={styles.amountSection} >
                 <div className={styles.amountContainer}>
-                    <div className={styles.amount}>$18.0</div>
-                    <div>($6.00/item)</div>
+                    <div className={styles.amount}>${totalPrice}</div>
+                    <div>(${price}/item)</div>
                 </div>
                 <div  className={styles.button}>
                     <div><button>-</button></div>

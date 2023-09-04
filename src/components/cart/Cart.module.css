@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.085);
     padding: 1rem;
     justify-content: center;
+    overflow: auto;
 
 }
 .quantityContainer{

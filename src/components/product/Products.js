@@ -3,7 +3,7 @@ import { productActions } from '../../store/product-slice';
 import { useDispatch } from 'react-redux';
 
 const Products = (props) => {
-    const {title, description, image,id, quantity, price} = props;
+    const {title, image,id, quantity, price} = props;
     const dispatch = useDispatch();
     const addToCartHandler = () => {
         dispatch(productActions.addItemToCart({
@@ -13,6 +13,7 @@ const Products = (props) => {
             quantity,
             image
         }))
+        console.log('dispatch product')
     }
     return (
         <div className={style.card}>

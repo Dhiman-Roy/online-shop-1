@@ -10,7 +10,7 @@ const Form = () => {
     const [productImage, setProductImage] = useState(null);
     const [id, setId] = useState("");
     const [description, setDescription] = useState("");
-    const [price, setPrice] = useState("");
+    const [price, setPrice] = useState();
     const [imageLink, setImageLink] = useState("");
     const [uploadDone, setUploadDone]= useState(false);
     let showSubmitButton = false;
@@ -29,7 +29,7 @@ const Form = () => {
     }
 
     const priceChangeHandler = event => {
-        setPrice(event.target.value);
+        setPrice(Number(event.target.value));
     }
     
     const idChangeHandler = event => {
@@ -59,7 +59,7 @@ const Form = () => {
     }
 
     const submitProduct = async () => {
-        console.log(imageLink)
+        
         const response = await fetch("https://reactshopone-default-rtdb.firebaseio.com/product.json",{
             method: 'POST',
             body: JSON.stringify({

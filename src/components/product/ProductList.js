@@ -29,7 +29,7 @@ const [productList, setProductList] = useState([])
     useEffect(() => {
         getProductData();
     },[])
-    console.log(productList)
+   
     const productsData = productList.map(item => {
         return <Products
         key={item.id}
