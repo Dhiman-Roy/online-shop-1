@@ -1,15 +1,18 @@
 .card{
     
     
-    background-color: rgba(204, 219, 219, 0.777);
+    background-color: white;
     padding: .5rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(64, 67, 67, 0.777);
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 14rem;
     
+}
+.card:hover{
+    box-shadow: 0px 0px 8px 4px  rgba(131, 131, 131, 0.366);
 }
 .content{
     
@@ -42,6 +45,10 @@
     border-radius: 5px;
     color: white;
     cursor: pointer;
+}
+.addButton:active{
+    background-color: whitesmoke;
+    color: black;
 }
 .title{
     font-weight: 500;

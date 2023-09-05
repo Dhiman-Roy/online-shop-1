@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export default function CartContainer() {
   const products = useSelector(state => state.product.items);
+  const totalProductPrice = useSelector(state => state.product.totalPrice)
   console.log(products)
   const dispatch = useDispatch();
   const cartButtonToggleHandler = () => {
@@ -33,6 +34,17 @@ export default function CartContainer() {
             })}
             </div>
 
+            </div>
+            <div className={styles.orderContainer}>
+              <div>
+                <div className={styles.netAmount}>Net Amount</div>
+                <div className={styles.totalProductPrice}>{totalProductPrice}$</div>
+              </div>
+              
+              <div className={styles.orderButtonContainer}>
+                <button>cancel</button>
+                <button>order</button>
+              </div>
             </div>
            
             

@@ -8,11 +8,10 @@ import { useSelector } from "react-redux";
 
 function App() {
   const cartToggler = useSelector(state => state.ui.cartIsVisible);
-  console.log("rendered");
-  // const wholePage = document.getElementById('root');
-  // console.dir(wholePage)
-  // cartToggler && (wholePage.style.overflow='hidden');
-  // !cartToggler && (wholePage.style.overflow='auto');
+  
+  cartToggler && (document.body.style.overflow='hidden');
+  !cartToggler && (document.body.style.overflow='auto');
+  
   return (
     <React.Fragment>
      <Header/>

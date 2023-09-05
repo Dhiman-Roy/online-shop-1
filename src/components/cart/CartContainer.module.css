@@ -12,8 +12,8 @@
     
 }
 .modal{
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
     background-color: azure;
     padding: 2rem;
     border-radius: 15px;
@@ -45,11 +45,41 @@
     overflow: auto;
     
     
+    
    
 }
 .cartAllProduct{
-    height: 21rem;
+    height: 26rem;
     overflow: auto;
+    margin-bottom: 1rem;
+}
+.orderContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.totalProductPrice{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.792);
+}
+.orderButtonContainer{
+    display: flex;
+    gap: 2rem;
+}
+.orderButtonContainer button{
+    width: 5rem;
+    background-color: rgba(16, 16, 15, 0.353);
+    border: none;
+    font-size: larger;
+    color: black;
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.123);
+    cursor: pointer;
+}
+.orderButtonContainer button:active{
+    background-color: white;
+    font-size: large;
 }
 /* body{
     overflow: hidden;

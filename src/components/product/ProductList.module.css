@@ -2,6 +2,6 @@
    
     display: flex;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
 }
