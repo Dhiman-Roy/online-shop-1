@@ -1,4 +1,4 @@
-import { productActions } from "./store/product-slice";
+import { productActions } from "./product-slice";
 
 export const sendCartData = (cart) => {
     return async (dispatch) => {
