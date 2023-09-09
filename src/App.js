@@ -6,6 +6,7 @@ import AddItemForm from "./components/addItemForm/AddItemForm";
 import CartContainer from "./components/cart/CartContainer";
 import { useDispatch, useSelector } from "react-redux";
 import { sendCartData, fetchCartData } from "./store/cart-actions";
+import OrderContainer from "./components/order/OrderContainer";
 
 let flag = true;
 function App() {
@@ -40,6 +41,7 @@ function App() {
      {cartToggler && <CartContainer/> }
      <ProductContainer/>
      <AddItemForm/>
+     <OrderContainer/>
     </React.Fragment>
   );
 }

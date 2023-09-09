@@ -1,0 +1,17 @@
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.633);
+    padding: .5rem;
+}
+.order > div{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.order img{
+    width: 5rem;
+    height: 5rem;
+}

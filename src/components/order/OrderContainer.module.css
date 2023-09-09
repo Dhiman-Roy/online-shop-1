@@ -1,0 +1,36 @@
+.overlay{
+    background-color: rgba(0, 0, 0, 0.708);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+.modal{
+    position: fixed;
+    height: 40rem;
+    width: 50rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.737);
+    z-index: 1000;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 1rem;
+}
+.modalCancel{
+    float: right;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: 600;
+    color: rgba(255, 0, 0, 0.862);
+
+}
+.header{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
